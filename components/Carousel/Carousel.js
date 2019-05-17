@@ -1,4 +1,4 @@
-
+//
 
 let carousel = document.querySelector('.carousel');
 let left = document.querySelector('.left-button');
