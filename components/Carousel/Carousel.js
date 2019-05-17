@@ -1,9 +1,4 @@
-// class Carousel {
-//     constructor(image) {
-//         this.image = image;
 
-//     }
-// }
 
 let carousel = document.querySelector('.carousel');
 let left = document.querySelector('.left-button');
@@ -15,17 +10,15 @@ images[0].style.display = 'flex';
 images[0].style.opacity = '1';
 
 carousel.addEventListener('mouseover', () => {
-    // TweenMax.set('.right', {opacity: 1});
-    // TweenMax.set('.left', {opacity: 1});
+    $(left).fadeIn();
+    $(right).fadeIn();
     right.style.display = 'flex';
     left.style.display = 'flex';
 })
 
 carousel.addEventListener('mouseout', () => {
-    // TweenMax.to('.right', {opacity: 0});
-    // TweenMax.to('.left', {opacity: 0});
-    right.style.display = 'none';
-    left.style.display = 'none';
+    $(left).fadeOut();
+    $(right).fadeOut();
 })
 
 // images.forEach(image => new Carousel(image));
